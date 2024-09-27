@@ -10,9 +10,9 @@ export default defineConfig({
       name: "header",
       filename: "remoteEntry.js",
       exposes: {
-        "./Header": "./src/main.tsx",
+        "./VrHeader": "./src/layouts/VrHeader",
       },
-      shared: [],
+      shared: ["react", "react-dom", "@chakra-ui/react", "zustand"],
     }),
   ],
   build: {
